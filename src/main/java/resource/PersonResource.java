@@ -1,8 +1,11 @@
 package resource;
 
+import Dao.PersonDao;
 import model.Person;
 
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -12,6 +15,9 @@ import java.util.List;
 @RequestScoped
 @Path("persons")
 public class PersonResource {
+
+    @Inject
+    private PersonDao personDao;
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Person> getAllPerson() {
@@ -20,8 +26,19 @@ public class PersonResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
+    @Transactional
     public Response addPerson(Person person) {
-        String responseMessage = "Person " + person.getUsername() + " received successfully.";
-        return Response.status(Response.Status.CREATED).entity(responseMessage).build();
+        personDao.createPerson(person);
+        String respMessage = "Person #" + person.getId() + " created successfully.";
+        return Response.status(Response.Status.CREATED).entity(respMessage).build();
+    }
+
+    @GET
+    @Path("{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Transactional
+    public Person getPerson(@PathParam("id") int id) {
+        Person person = personDao.readPerson(id);
+        return person;
     }
 }

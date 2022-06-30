@@ -1,0 +1,22 @@
+package Dao;
+
+import model.Person;
+
+import javax.enterprise.context.RequestScoped;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+@RequestScoped
+public class PersonDao {
+    @PersistenceContext(name = "jpa-unit")
+    private EntityManager em;
+
+    public Person createPerson(Person person) {
+        em.persist(person);
+        return person; // TODO: replace with getPerson()...
+    }
+
+    public Person readPerson(int personId) {
+        return em.find(Person.class, personId);
+    }
+}
