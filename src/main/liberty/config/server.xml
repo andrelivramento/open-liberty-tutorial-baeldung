@@ -2,7 +2,7 @@
     <featureManager>
         <feature>mpHealth-2.0</feature>
     </featureManager>
-    <webApplication location="open-liberty-tutorial-baeldung-git.war" contextRoot="/" />
+    <webApplication location="oltbg-1.0-SNAPSHOT.war" contextRoot="/" />
     <httpEndpoint host="*" httpPort="${default.http.port}"
                   httpsPort="${default.https.port}" id="defaultHttpEndpoint" />
 </server>
