@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab3c3320-2938-473c-a54a-5ce38be7265b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resource/PersonResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rest/ApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656579386719</updated>
       <workItem from="1656579387935" duration="1260000" />
-      <workItem from="1656580777795" duration="5467000" />
+      <workItem from="1656580777795" duration="6030000" />
     </task>
     <servers />
   </component>
