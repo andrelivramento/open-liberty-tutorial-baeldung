@@ -3,6 +3,7 @@
         <feature>mpHealth-2.0</feature>
         <feature>servlet-4.0</feature>
         <feature>jaxrs-2.1</feature>
+        <feature>cdi-2.0</feature>
     </featureManager>
     <webApplication location="oltbg-1.0-SNAPSHOT.war" contextRoot="/" />
     <httpEndpoint host="*" httpPort="${default.http.port}"
