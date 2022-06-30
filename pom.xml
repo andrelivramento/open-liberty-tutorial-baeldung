@@ -29,6 +29,11 @@
             <version>22.0.0.6</version>
             <type>esa</type>
         </dependency>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.14.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
