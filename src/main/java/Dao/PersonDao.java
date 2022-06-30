@@ -13,7 +13,7 @@ public class PersonDao {
 
     public Person createPerson(Person person) {
         em.persist(person);
-        return person; // TODO: replace with getPerson()...
+        return person;
     }
 
     public Person readPerson(int personId) {
